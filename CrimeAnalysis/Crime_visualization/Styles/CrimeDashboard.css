@@ -1,0 +1,373 @@
+/*
+  Theme Name: Rapid
+  Theme URL: https://bootstrapmade.com/rapid-multipurpose-bootstrap-business-template/
+  Author: BootstrapMade.com
+  License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    background: #fff;
+    color: #444;
+    font-family: "Open Sans", sans-serif;
+  }
+  
+  a {
+    color: #1bb1dc;
+    transition: 0.5s;
+  }
+  
+  a:hover,
+  a:active,
+  a:focus {
+    color: #0a98c0;
+    outline: none;
+    text-decoration: none;
+  }
+  
+  p {
+    padding: 0;
+    margin: 0 0 30px 0;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+  }
+  
+
+  /* .containers{
+    padding:30px 50px;
+  } */
+  .row{
+    margin:0!important;
+
+  }
+  
+  /*--------------------------------------------------------------
+  # Top Bar
+  --------------------------------------------------------------*/
+  
+  #topbar {
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    transition: all 0.5s;
+  }
+  
+  #topbar .social-links {
+    text-align: right;
+  }
+  
+  #topbar .social-links a {
+    color: #535074;
+    padding: 4px 12px;
+    display: inline-block;
+    line-height: 1px;
+  }
+  
+  #topbar .social-links a:hover {
+    color: #1bb1dc;
+  }
+  
+  #topbar .social-links a:first-child {
+    border-left: 0;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header
+  --------------------------------------------------------------*/
+  
+  #header {
+    height: 110px;
+    transition: all 0.5s;
+    z-index: 997;
+    transition: all 0.5s;
+    padding: 20px 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: all 0.5s;
+    z-index: 997;
+    background-color:lightblue;
+  }
+
+  
+  #header .logo h1 {
+    font-size: 36px;
+    margin: 0;
+    padding: 20px 15px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
+  
+  #header .logo h1 a,
+  #header .logo h1 a:hover {
+    color: #413e66;
+    text-decoration: none;
+  }
+  
+  #header .logo img {
+    padding-right: 20px;
+   
+    max-height: 50px;
+  }
+  
+  .main-pages {
+    margin-top: 60px;
+  }
+  
+  /*--------------------------------------------------------------
+  # Intro Section
+  --------------------------------------------------------------*/
+  
+  body {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+   
+    background-size: cover;
+  }
+  
+  #intro .intro-info h2 {
+    color: #413e66;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 700;
+  }
+  
+  #intro .intro-info h2 span {
+    color: #1bb1dc;
+  }
+  
+  #intro .intro-info .btn-get-started,
+  #intro .intro-info .btn-services {
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: #1bb1dc;
+    color: #fff;
+  }
+  
+  #intro .intro-info .btn-get-started:hover,
+  #intro .intro-info .btn-services:hover {
+    background: #0a98c0;
+  }
+  
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  
+  /* Desktop Navigation */
+  
+  .main-nav {
+    /* Drop Down */
+    /* Deep Drop Down */
+  }
+  
+  .main-nav,
+  .main-nav * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .main-nav > ul > li {
+    position: relative;
+    white-space: nowrap;
+    float: left;
+  }
+  
+  .main-nav a {
+    display: block;
+    position: relative;
+    color: #413e66;
+    padding: 10px 15px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .main-nav a:hover,
+  .main-nav .active > a,
+  .main-nav li:hover > a {
+    color: #1bb1dc;
+    text-decoration: none;
+  }
+
+  
+  
+  /*--------------------------------------------------------------
+  # Sections
+  --------------------------------------------------------------*/
+  
+  /* Sections Header
+  --------------------------------*/
+  
+  .section-header h3 {
+    font-size: 36px;
+    color: #413e66;
+    text-align: center;
+    font-weight: 700;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .section-header p {
+    text-align: center;
+    margin: auto;
+    font-size: 15px;
+    padding-bottom: 60px;
+    color: #535074;
+    width: 50%;
+  }
+  
+  
+
+  /* Charts Area */
+  .chartsArea{
+    padding-top:30px;
+  }
+
+  /*Charts*/
+#chartContainer_1,#chartContainer_2,#chartContainer_3,#chartContainer_4,#chartContainer_5{
+  display:none;
+}
+
+  .canvasjs-chart-credit{
+    display:none!important;
+}
+
+/* Style the lines by removing the fill and applying a stroke */
+.line {
+  fill: none;
+  stroke: #ffab00;
+  stroke-width: 3;
+}
+.line2{
+  fill: none;
+  stroke:blue;
+  stroke-width: 3;
+  
+}
+
+/* Style the dots by assigning a fill and stroke */
+.dot {
+  fill: #ffab00;
+  stroke: #fff;
+}
+
+
+.main-nav{
+  background-color:blanchedalmond;
+}
+.main-nav svg{
+  margin-right:5px;
+}
+
+
+.fas{
+  margin-right:5px;
+}
+.bar {
+  fill: steelblue;
+}
+.toolTip {
+pointer-events: none; 
+position: absolute;
+display: none;
+min-width: 30px;
+height: auto;
+background: none repeat scroll 0 0 #ffffff;
+border: 1px solid #6F257F;
+padding: 14px;
+text-align: center;
+}
+
+/* MAIN CONTAINER */
+
+.mainContainer h2{
+  color: #413e66;
+    font-family: serif;
+    font-weight: 700;
+    text-align:center;
+    text-decoration: overline;
+}
+.mainContainer .intro svg , .mainContainer .linkDataSource svg,.mainContainer .dataVisualization svg{
+  font-size: 36px;
+    float: left;
+}
+
+.mainContainer .intro p , .mainContainer .linkDataSource p , .dataVisualization .visualizationTypes p{
+  font-size: 16px;
+    font-weight: 400;
+    margin-left: 56px;
+    color: #413e66;
+    font-family:auto
+    
+}
+.mainContainer .intro h4 ,.mainContainer .linkDataSource h4,.mainContainer .dataVisualization h4{
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 56px;
+  color: #413e66;
+  margin-bottom: 15px;
+  margin-top:30px;
+}
+.mainContainer .introImg img{
+  height: 400px;
+    width: 100%;
+    margin: 0;
+    margin-top:130px;
+}
+.visualizationTypes{
+  margin-left:56px;
+}
+.visualizationTypes h5 , .visualizationTypes p{
+  margin:15px; 
+}
+.dataVisualization .visualizationTypes svg{
+  height:20px;
+}
+
+.dataVisualization .visualizationTypes h5{
+  font-weight: 600;
+    font-family: cursive;
+}
+
+#footer{
+  padding: 15px 0;
+    background:whitesmoke;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,.2);
+
+}
+#footer .footer-menu span{
+  color: #999;
+    margin: 0 5px;
+}
+#footer .footer-menu .footerIcons{
+  float:right;
+}
+#footer .footer-menu .footerIcons svg{
+  height:30px;
+}

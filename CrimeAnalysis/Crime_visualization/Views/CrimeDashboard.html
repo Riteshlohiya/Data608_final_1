@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Crime Visualization</title>
+    <link rel="stylesheet" type="text/css" href="../Styles/CrimeDashboard.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/fontawesome.min.css"/>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js'></script>
+    <script src="C:/Users/rites/Documents/GitHub/Data608_Project_Chicago_Crimes/CrimeAnalysis/Crime_visualization/Model/crime_visualization.js" ></script>
+    
+     
+
+    
+  </head>
+  
+  <body>
+    <!--==========================
+    Header
+    ============================-->
+    <header id="header">
+  
+     
+  
+      <div class="containers">
+  
+        <div class="logo float-left">
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <h1 class="text-light"><a href="#intro" class="scrollto"><a href="#header" class="scrollto"><img src="../output-onlinepngtools.png" alt="" class="img-fluid"></a><span>CHICAGO CRIME ANALYTICS</span></a></h1>
+           
+        </div>
+        
+        <nav class="main-nav float-right d-none d-lg-block col-md-12">
+          <ul>
+            <li class="home"><a href="#intro"><i class="fas fa-home fa-lg"></i>Home</a></li>
+			<li class="chartSelector_7"><a href="#"><i class="fas fa-chart-line fa-lg"></i>Total Crimes</a></li>
+            <li class='chartSelector'><a href="#"><i class="far fa-clock fa-lg"></i>Crimes Time</a></li>
+            <li class='chartSelector_1'><a href="#"><i class="fas fa-calendar-day fa-lg"></i>Weekday Vs Weekend</a></li>
+            <li class="chartSelector_2"><a href="#"><i class="fas fa-bell fa-lg"></i>Arrest Vs Release</a></li>
+            <li class="chartSelector_3"><a href="#"><i class="fas fa-globe-americas fa-lg"></i>Domestic Vs Non-Domestic</a></li>
+            <li class="chartSelector_4"><a href="#"><i class="fas fa-money-check-alt fa-lg"></i>Types Of Crimes</a></li>
+            <li class="chartSelector_5"><a href="#"><i class="fas fa-street-view fa-lg"></i>Locations of Crimes </a></li>
+            <li class="chartSelector_6"><a href="#"><i class="far fa-calendar-times fa-lg"></i>Monthly Crime</a></li>
+            
+            
+          </ul>
+        </nav><!-- .main-nav -->
+        </div>
+     
+    </header><!-- #header -->
+  
+    <section class="containers" >
+      <div class='col-md-12 chartsArea'>
+        
+      <div id="chartContainer" class='crime_chart' style="height: 360px; width: 100%;">
+        
+      </div>
+      <div id="chartContainer_1" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      <div id="chartContainer_2" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      <div id="chartContainer_3" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      <div id="chartContainer_4" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      <div id="chartContainer_5" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      <div id="chartContainer_6" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      <div id="chartContainer_7" class="crime_chart" style="height: 360px; width: 100%;"></div>
+      
+    
+    </div>
+    </section>
+
+    <section class='mainContainer'>
+      <div class="container">
+      <div class='col-md-12 '>
+        <div class="row">
+          <h2>CRIMES IN THE CITY OF CHICAGO</h2>
+          <div class="col-lg-6 col-md-6">
+            <div class='introImg'>
+              <img src='../Graph-PNG-Transparent-Image.png'></img>
+            </div>
+
+          </div>
+          <div class="col-lg-6 col-md-6">
+            <div class='intro'>
+                <i class='far fa-gem' style="color: #f058dc;"></i>
+                <h4>Introduction</h4>
+                <p>This visualization presents crimes committed in the City of Chicago from 2012 to 2016.
+                    It will show an overview of crimes committed in the City of Chicago from 2012 to 2016, including trends of crime over years, type of crimes committed most, geographic distribution of crimes committed categorized by types. In general, it will give a objective visual representation of crimes took place in past few years from different perspectives.
+                    </p>
+            </div>
+            <div class='linkDataSource'>
+                <i class="fas fa-link"  style="color: #f058dc;"></i>
+                <h4>Data Source</h4>
+                <p>The data is from Kaggle.</p>
+                    <p><span><a href="https://www.kaggle.com/vic666/chicago-crimes-2012-to-2017">https://www.kaggle.com/vic666/chicago-crimes-2012-to-2017</a></span>
+                    </p>
+            </div>
+            <div class='dataVisualization'>
+                <i class="fas fa-fire" style="color: #f058dc;"></i>
+                <h4>Visualization</h4>
+                <div class='visualizationTypes'>
+                  <div class='year_month'>
+                      <i class="fas fa-check" style="color: #f058dc;"></i><h5>Crime trends based on type and month of the year</h5>
+                    <p>This graph will give the readers a concept on the month of years when the number of certain type of crimes increased or decreased.
+                      </p>
+                  </div>
+                  <div class='crime_location'>
+                      <i class="fas fa-check" style="color: #f058dc;"></i><h5>Crime Locations</h5>
+                      <p>Number of crimes happened in that location.</p>
+                  </div>
+                  <div class='Domestic_crime'>
+                      <i class="fas fa-check" style="color: #f058dc;"></i><h5>Domestic crime and non-Domestic crimes</h5>
+                      <p>Information about the proportion of how many crimes where domestic and non-domestic.</p>
+                  </div>
+                  <div class='arrest_nonarrest'>
+                      <i class="fas fa-check" style="color: #f058dc;"></i><h5>Arrests and No-Arrests</h5>
+                      <p>Crime trends based on type and month of the year</p>
+                  </div>
+                  <div class='total_crimes'>
+                      <i class="fas fa-check" style="color: #f058dc;"></i> <h5>Overall Crime timelines</h5>
+                        <p>Give users a clear view on how many crimes have been committed within that time period.</p>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <!-- <footer id="footer">
+      <div class="container">
+        <div class="col-md-6 copyrights">© 2019 Ritesh Lohiya</a></div>
+        <div class="col-md-6 footer-menu">
+          <div class='footerIcons'><span></span> <a href="https://twitter.com/BootstrapMade" target="_blank"><i class="fab fa-twitter" rel="nofollow external"></i></a> 
+          <span></span> <a href="https://facebook.com/BootstrapMade" target="_blank"><i class="fab fa-facebook-f" rel="nofollow external"></i></a> 
+          <span></span> <a href="https://feeds.feedburner.com/BootstrapMade" target="_blank" rel="nofollow external"><i class="fa fa-rss"></i></a> 
+          </div>
+          </div>
+       </footer> -->
+    
+ 
+  
+  </body>
+
+</html>

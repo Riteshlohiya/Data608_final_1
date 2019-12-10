@@ -1,0 +1,33 @@
+[ 
+    
+    { 
+       "year":2012,
+       "non_domestic":201045,
+       "domestic":34199,
+       "total":235244
+    },
+    { 
+       "year":2013,
+       "non_domestic":258659,
+       "domestic":44404,
+       "total":303063
+    },
+    { 
+       "year":2014,
+       "non_domestic":214538,
+       "domestic":3731,
+       "total":251885
+    },
+    { 
+       "year":2015,
+       "non_domestic":170020,
+       "domestic":32293,
+       "total":202249
+    },
+    { 
+       "year":2016,
+       "non_domestic":46985,
+       "domestic":9149,
+       "total":56134
+    }
+ ]
